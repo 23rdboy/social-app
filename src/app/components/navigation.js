@@ -1,38 +1,14 @@
-import React from "react";
-import Link from "next/link";
-import Logo from "./logo";
-import Button from "./button";
+import React from 'react';
 
+import Link from 'next/link';
 const Navigation = () => {
     return (
-      <>
-        <div className="w-full h-20 bg-emerald-800 sticky top-0">
-          <div className="container mx-auto px-4 h-full">
-            <div className="flex justify-between items-center h-full">
-              <Logo />
-              <ul className="hidden md:flex gap-x-6 text-white">
-                <li>
-                  <Link href="/about">
-                    <p>About Us</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services">
-                    <p>Services</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contacts">
-                    <p>Contacts</p>
-                  </Link>
-                </li>
-              </ul>
-              <Button />
-            </div>
-          </div>
+        <div className ="flex gap-4 p-4 bg-gray-200 ">
+            <Link href="/home">Home</Link>
+            <Link href="/about">About</Link> 
+        
         </div>
-      </>
     );
-  };
-  
-  export default Navigation;
+};
+
+export default Navigation;
